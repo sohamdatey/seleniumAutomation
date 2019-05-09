@@ -1,0 +1,29 @@
+
+
+		{
+	    "list" : [
+	    	
+	    		
+		   {
+	           "step":       {	
+	           					 "type":"SampleStep",
+	        	            	 "xpath" :"xpathString" ,
+								"textSample" : "textSampleForSampleClass"
+	                        	},
+	          "occurence":"value4"
+	       }
+	       ,
+	    	{
+	        "step":
+	                      {	 "type":"ReadStep",
+	        	             "xpath" :"xpathString" ,
+							 "expectedValue" : "soham"  
+	                        },
+	        "occurence":"value2"
+		   }
+	    
+	    
+	       
+	       ]
+	}
+
