@@ -1,5 +1,8 @@
 package com.demo.soham.selAuto.model;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 public class SampleStep implements Step {
 
 	
@@ -30,9 +33,9 @@ public class SampleStep implements Step {
 		
 	}
 	@Override
-	public void addStep() {
+	public int addStep(XSSFSheet spreadsheet,int rowIndex) {
 		// TODO Auto-generated method stub
-		
+		return 0;
 	}
 	
 	

@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.demo.soham.selAuto.excelutil.ExcelInteraction;
 import com.demo.soham.selAuto.model.AddTestResource;
 
 @RestController
@@ -18,10 +19,9 @@ public class TestCaseReqController {
 		return "hello";
     }
 	
-	@RequestMapping(value = "/createUser", method = RequestMethod.POST, produces = "application/json")
+	@RequestMapping(value = "/addTestCase", method = RequestMethod.POST, produces = "application/json")
 	void addTest(@RequestBody AddTestResource addTestResource) {
-
-		System.out.println(addTestResource);
+			new ExcelInteraction().addTestCase(addTestResource.getList(), "AngularTestCase");
 	}
 
 }

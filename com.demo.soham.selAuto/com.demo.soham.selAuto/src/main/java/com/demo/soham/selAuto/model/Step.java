@@ -1,5 +1,8 @@
 package com.demo.soham.selAuto.model;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -16,5 +19,5 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 public interface Step {
 
 	void perform();
-	void addStep();
+	 int addStep(XSSFSheet spreadsheet,int rowIndex);
 }

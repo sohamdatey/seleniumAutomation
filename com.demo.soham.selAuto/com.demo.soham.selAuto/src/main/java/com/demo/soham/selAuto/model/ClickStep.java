@@ -1,5 +1,8 @@
 package com.demo.soham.selAuto.model;
 
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 public class ClickStep implements Step{
 
 	String xpath;
@@ -19,9 +22,10 @@ public class ClickStep implements Step{
 	}
 
 	@Override
-	public void addStep() {
-		// TODO Auto-generated method stub
+	public int addStep(XSSFSheet spreadsheet,int rowIndex) {
 		
+		
+		return 0;
 	}
 
 	@Override
