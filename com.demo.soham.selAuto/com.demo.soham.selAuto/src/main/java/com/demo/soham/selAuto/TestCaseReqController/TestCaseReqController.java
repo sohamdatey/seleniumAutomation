@@ -23,5 +23,9 @@ public class TestCaseReqController {
 	void addTest(@RequestBody AddTestResource addTestResource) {
 			new ExcelInteraction().addTestCase(addTestResource.getList(), "AngularTestCase");
 	}
+	@RequestMapping(value = "/runTestCase", method = RequestMethod.POST, produces = "application/json")
+	void runTestCase() {
+			new ExcelInteraction().runTestCase("AngularTestCase");
+	}
 
 }

@@ -6,7 +6,7 @@
 	            	
 	    	{
 	      
-	                       "type":"ReadStep",
+	                         "type":"ReadStep",
 	        	             "xpath" :"xpathString" ,
 							 "expectedValue" : "soham"  
 	                        

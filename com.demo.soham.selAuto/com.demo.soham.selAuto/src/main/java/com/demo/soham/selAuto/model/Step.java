@@ -7,6 +7,8 @@ import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
+import SeleniumUtility.SeleniumUtil;
+
 @JsonTypeInfo(
 		  use = JsonTypeInfo.Id.NAME, 
 		  include = JsonTypeInfo.As.PROPERTY, 
@@ -16,8 +18,8 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 		  @Type(value = ClickStep.class, name = "ClickStep"),
 		  @Type(value = SampleStep.class, name = "SampleStep") 
 		})
-public interface Step {
+public abstract  class Step {
 
-	void perform();
-	 int addStep(XSSFSheet spreadsheet,int rowIndex);
+	abstract public void perform(SeleniumUtil su);
+	abstract public int addStep(XSSFSheet spreadsheet,int rowIndex);
 }

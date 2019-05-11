@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.4.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.demo.soham.selAuto</groupId>
 	<artifactId>com.demo.soham.selAuto</artifactId>
@@ -23,58 +23,66 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
 
-		
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	
-	
-		<!--apche poi  -->
-		<dependency>
-                 <groupId>org.apache.poi</groupId>
-                 <artifactId>poi</artifactId>
-                 <version>3.9</version>
-          </dependency>
-          <dependency>
-                 <groupId>org.apache.poi</groupId>
-                 <artifactId>poi-ooxml</artifactId>
-                 <version>3.9</version>
-          </dependency>
-          <dependency>
-                 <groupId>org.apache.poi</groupId>
-                 <artifactId>poi-ooxml-schemas</artifactId>
-                 <version>3.9</version>
-          </dependency>
-          <dependency>
-                 <groupId>org.apache.poi</groupId>
-                 <artifactId>poi-scratchpad</artifactId>
-                 <version>3.9</version>
-          </dependency>
-          <dependency>
-                 <groupId>org.apache.poi</groupId>
-                 <artifactId>ooxml-schemas</artifactId>
-                 <version>1.1</version>
-          </dependency>
 
-          <dependency>
-                 <groupId>org.apache.poi</groupId>
-                 <artifactId>openxml4j</artifactId>
-                 <version>1.0-beta</version>
-          </dependency>
-		<!--  apachepoi end -->
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+		<!--apche poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>ooxml-schemas</artifactId>
+			<version>1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>openxml4j</artifactId>
+			<version>1.0-beta</version>
+		</dependency>
+		<!-- apachepoi end -->
+
+		<!--selenium start -->
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>2.53.0</version>
+		</dependency>
+
+		<!-- selenium end -->
+
+
+
+
+
+
+
 	</dependencies>
 
 	<build>

@@ -1,10 +1,11 @@
 package com.demo.soham.selAuto.model;
 
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 
-public class ReadStep implements Step {
+import SeleniumUtility.SeleniumUtil;
+
+public class ReadStep extends Step {
 	
 	String xpath;
 	String expectedValue;
@@ -14,21 +15,27 @@ public class ReadStep implements Step {
 		return xpath;
 	}
 
-	public void setXpath(String xpath) {
+	public ReadStep setXpath(String xpath) {
 		this.xpath = xpath;
+		return this;
 	}
 
 	public String getExpectedValue() {
 		return expectedValue;
 	}
 
-	public void setExpectedValue(String expectedValue) {
+	public ReadStep setExpectedValue(String expectedValue) {
 		this.expectedValue = expectedValue;
+		return this;
 	}
 
 	@Override
-	public void perform() {
-		// TODO Auto-generated method stub
+	public void perform(SeleniumUtil su) {
+		su.openUrl("https://angular.io/");
+        
+        if(su.readTest(xpath, expectedValue)) {
+        	System.out.println("true");
+        }
 
 	}
 

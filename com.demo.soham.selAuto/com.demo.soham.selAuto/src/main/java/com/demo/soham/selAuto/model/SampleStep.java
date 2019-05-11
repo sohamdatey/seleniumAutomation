@@ -3,7 +3,9 @@ package com.demo.soham.selAuto.model;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class SampleStep implements Step {
+import SeleniumUtility.SeleniumUtil;
+
+public class SampleStep extends Step {
 
 	
 	String xpath;
@@ -28,7 +30,7 @@ public class SampleStep implements Step {
 		this.textSample = textSample;
 	}
 	@Override
-	public void perform() {
+	public void perform(SeleniumUtil su) {
 		// TODO Auto-generated method stub
 		
 	}
